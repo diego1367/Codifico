@@ -1,0 +1,11 @@
+C:\Users\diegoguzman\source\repos\CodificoBack\CodficoBack.Entities\bin\Debug\net9.0\CodficoBack.Entities.deps.json
+C:\Users\diegoguzman\source\repos\CodificoBack\CodficoBack.Entities\bin\Debug\net9.0\CodficoBack.Entities.dll
+C:\Users\diegoguzman\source\repos\CodificoBack\CodficoBack.Entities\bin\Debug\net9.0\CodficoBack.Entities.pdb
+C:\Users\diegoguzman\source\repos\CodificoBack\CodficoBack.Entities\obj\Debug\net9.0\CodficoBack.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\diegoguzman\source\repos\CodificoBack\CodficoBack.Entities\obj\Debug\net9.0\CodficoBack.Entities.AssemblyInfoInputs.cache
+C:\Users\diegoguzman\source\repos\CodificoBack\CodficoBack.Entities\obj\Debug\net9.0\CodficoBack.Entities.AssemblyInfo.cs
+C:\Users\diegoguzman\source\repos\CodificoBack\CodficoBack.Entities\obj\Debug\net9.0\CodficoBack.Entities.csproj.CoreCompileInputs.cache
+C:\Users\diegoguzman\source\repos\CodificoBack\CodficoBack.Entities\obj\Debug\net9.0\CodficoBack.Entities.dll
+C:\Users\diegoguzman\source\repos\CodificoBack\CodficoBack.Entities\obj\Debug\net9.0\refint\CodficoBack.Entities.dll
+C:\Users\diegoguzman\source\repos\CodificoBack\CodficoBack.Entities\obj\Debug\net9.0\CodficoBack.Entities.pdb
+C:\Users\diegoguzman\source\repos\CodificoBack\CodficoBack.Entities\obj\Debug\net9.0\ref\CodficoBack.Entities.dll

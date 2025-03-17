@@ -1,0 +1,17 @@
+C:\Users\diegoguzman\source\repos\CodificoBack\CodficoBack.Repository\bin\Debug\net9.0\CodficoBack.Repository.deps.json
+C:\Users\diegoguzman\source\repos\CodificoBack\CodficoBack.Repository\bin\Debug\net9.0\CodficoBack.Repository.dll
+C:\Users\diegoguzman\source\repos\CodificoBack\CodficoBack.Repository\bin\Debug\net9.0\CodficoBack.Repository.pdb
+C:\Users\diegoguzman\source\repos\CodificoBack\CodficoBack.Repository\bin\Debug\net9.0\CodficoBack.Data.dll
+C:\Users\diegoguzman\source\repos\CodificoBack\CodficoBack.Repository\bin\Debug\net9.0\CodficoBack.Entities.dll
+C:\Users\diegoguzman\source\repos\CodificoBack\CodficoBack.Repository\bin\Debug\net9.0\CodficoBack.Data.pdb
+C:\Users\diegoguzman\source\repos\CodificoBack\CodficoBack.Repository\bin\Debug\net9.0\CodficoBack.Entities.pdb
+C:\Users\diegoguzman\source\repos\CodificoBack\CodficoBack.Repository\obj\Debug\net9.0\CodficoBack.Repository.csproj.AssemblyReference.cache
+C:\Users\diegoguzman\source\repos\CodificoBack\CodficoBack.Repository\obj\Debug\net9.0\CodficoBack.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\diegoguzman\source\repos\CodificoBack\CodficoBack.Repository\obj\Debug\net9.0\CodficoBack.Repository.AssemblyInfoInputs.cache
+C:\Users\diegoguzman\source\repos\CodificoBack\CodficoBack.Repository\obj\Debug\net9.0\CodficoBack.Repository.AssemblyInfo.cs
+C:\Users\diegoguzman\source\repos\CodificoBack\CodficoBack.Repository\obj\Debug\net9.0\CodficoBack.Repository.csproj.CoreCompileInputs.cache
+C:\Users\diegoguzman\source\repos\CodificoBack\CodficoBack.Repository\obj\Debug\net9.0\CodficoB.40FF8100.Up2Date
+C:\Users\diegoguzman\source\repos\CodificoBack\CodficoBack.Repository\obj\Debug\net9.0\CodficoBack.Repository.dll
+C:\Users\diegoguzman\source\repos\CodificoBack\CodficoBack.Repository\obj\Debug\net9.0\refint\CodficoBack.Repository.dll
+C:\Users\diegoguzman\source\repos\CodificoBack\CodficoBack.Repository\obj\Debug\net9.0\CodficoBack.Repository.pdb
+C:\Users\diegoguzman\source\repos\CodificoBack\CodficoBack.Repository\obj\Debug\net9.0\ref\CodficoBack.Repository.dll

@@ -1,0 +1,6 @@
+@CodificoBack_HostAddress = http://localhost:5020
+
+GET {{CodificoBack_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

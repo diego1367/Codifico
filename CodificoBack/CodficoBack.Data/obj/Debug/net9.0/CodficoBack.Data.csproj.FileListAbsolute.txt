@@ -1,0 +1,15 @@
+C:\Users\diegoguzman\source\repos\CodificoBack\CodficoBack.Data\bin\Debug\net9.0\CodficoBack.Data.deps.json
+C:\Users\diegoguzman\source\repos\CodificoBack\CodficoBack.Data\bin\Debug\net9.0\CodficoBack.Data.dll
+C:\Users\diegoguzman\source\repos\CodificoBack\CodficoBack.Data\bin\Debug\net9.0\CodficoBack.Data.pdb
+C:\Users\diegoguzman\source\repos\CodificoBack\CodficoBack.Data\bin\Debug\net9.0\CodficoBack.Entities.dll
+C:\Users\diegoguzman\source\repos\CodificoBack\CodficoBack.Data\bin\Debug\net9.0\CodficoBack.Entities.pdb
+C:\Users\diegoguzman\source\repos\CodificoBack\CodficoBack.Data\obj\Debug\net9.0\CodficoBack.Data.csproj.AssemblyReference.cache
+C:\Users\diegoguzman\source\repos\CodificoBack\CodficoBack.Data\obj\Debug\net9.0\CodficoBack.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\diegoguzman\source\repos\CodificoBack\CodficoBack.Data\obj\Debug\net9.0\CodficoBack.Data.AssemblyInfoInputs.cache
+C:\Users\diegoguzman\source\repos\CodificoBack\CodficoBack.Data\obj\Debug\net9.0\CodficoBack.Data.AssemblyInfo.cs
+C:\Users\diegoguzman\source\repos\CodificoBack\CodficoBack.Data\obj\Debug\net9.0\CodficoBack.Data.csproj.CoreCompileInputs.cache
+C:\Users\diegoguzman\source\repos\CodificoBack\CodficoBack.Data\obj\Debug\net9.0\CodficoB.FC6C2476.Up2Date
+C:\Users\diegoguzman\source\repos\CodificoBack\CodficoBack.Data\obj\Debug\net9.0\CodficoBack.Data.dll
+C:\Users\diegoguzman\source\repos\CodificoBack\CodficoBack.Data\obj\Debug\net9.0\refint\CodficoBack.Data.dll
+C:\Users\diegoguzman\source\repos\CodificoBack\CodficoBack.Data\obj\Debug\net9.0\CodficoBack.Data.pdb
+C:\Users\diegoguzman\source\repos\CodificoBack\CodficoBack.Data\obj\Debug\net9.0\ref\CodficoBack.Data.dll
