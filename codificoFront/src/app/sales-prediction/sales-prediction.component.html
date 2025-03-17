@@ -1,0 +1,72 @@
+<div class="container mx-auto mt-8">
+  <div class="bg-white shadow-md rounded-lg p-6">
+    <div class="flex justify-between items-center mb-4">
+      <h2 class="text-2xl font-semibold">Customers</h2>
+      <div class="relative">
+        <input [(ngModel)]="searchQuery" class="border rounded-lg py-2 px-4 pl-10" placeholder="Customer Name"
+          type="text" (keyup)="searchCustomers()" />
+        <i class="fas fa-search absolute left-3 top-3 text-gray-500"></i>
+      </div>
+    </div>
+
+    <table class="min-w-full bg-white">
+      <thead>
+        <tr>
+          <!-- <th class="py-2 px-4 border-b border-gray-200 text-left">Customer Name</th>
+          <th class="py-2 px-4 border-b border-gray-200 text-left">Last Order Date</th>
+          <th class="py-2 px-4 border-b border-gray-200 text-left">Next Predicted Order</th> -->
+          <th class="py-2 px-4 border-b border-gray-200 text-left cursor-pointer" (click)="sortBy('customerName')">
+            Customer Name
+            <i *ngIf="sortColumn === 'customerName'" [ngClass]="sortDirection === 'asc' ? 'fas fa-arrow-up' : 'fas fa-arrow-down'"></i>
+          </th>
+          <th class="py-2 px-4 border-b border-gray-200 text-left cursor-pointer" (click)="sortBy('lastOrderDate')">
+            Last Order Date
+            <i *ngIf="sortColumn === 'lastOrderDate'" [ngClass]="sortDirection === 'asc' ? 'fas fa-arrow-up' : 'fas fa-arrow-down'"></i>
+          </th>
+          <th class="py-2 px-4 border-b border-gray-200 text-left cursor-pointer" (click)="sortBy('nextPredictedOrder')">
+            Next Predicted Order
+            <i *ngIf="sortColumn === 'nextPredictedOrder'" [ngClass]="sortDirection === 'asc' ? 'fas fa-arrow-up' : 'fas fa-arrow-down'"></i>
+          </th>
+          <th class="py-2 px-4 border-b border-gray-200 text-left"></th>
+          <th class="py-2 px-4 border-b border-gray-200 text-left"></th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (customer of displayedCustomers; track customer.customerName) {
+        <tr>
+          <td class="py-2 px-4 border-b border-gray-200">{{ customer.customerName }}</td>
+          <td class="py-2 px-4 border-b border-gray-200">{{ customer.lastOrderDate | date: 'dd/MM/yyyy' }}</td>
+          <td class="py-2 px-4 border-b border-gray-200">{{ customer.nextPredictedOrder | date: 'dd/MM/yyyy' }}</td>
+          <td class="py-2 px-4 border-b border-gray-200 text-red-500 cursor-pointer" (click)="openViewOrders(customer)">
+            VIEW ORDERS</td>
+          <td class="py-2 px-4 border-b border-gray-200 text-green-500 cursor-pointer" (click)="openNewOrder(customer)">
+            NEW ORDER</td>
+        </tr>
+        } @empty {
+        <li>No items available.</li>
+        }
+      </tbody>
+    </table>
+
+    <div class="flex justify-between items-center mt-4">
+      <div class="flex items-center">
+        <span class="mr-2">Rows per page:</span>
+        <select [(ngModel)]="pageSize" class="border rounded-lg py-1 px-2" (change)="updatePagination()">
+          <option [value]="10">10</option>
+          <option [value]="20">20</option>
+          <option [value]="30">30</option>
+        </select>
+      </div>
+      <div class="flex items-center">
+        <span class="mr-2">{{ (currentPage - 1) * pageSize + 1 }}-{{ Math.min(currentPage * pageSize, totalCustomers) }} of {{ totalCustomers }}</span>
+        <button class="border rounded-lg py-1 px-2" (click)="changePage(currentPage - 1)" [disabled]="currentPage === 1">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="border rounded-lg py-1 px-2 ml-2" (click)="changePage(currentPage + 1)" 
+          [disabled]="currentPage * pageSize >= totalCustomers">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

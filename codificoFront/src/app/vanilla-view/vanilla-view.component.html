@@ -1,0 +1,22 @@
+<div class="flex justify-center mt-10">
+    <div class="bg-white shadow-lg rounded-lg p-6 w-full max-w-md">
+      <h2 class="text-2xl font-semibold text-center mb-4">Data Chart</h2>
+      <div class="mb-4">
+        <label for="dataInput" class="block text-gray-700 text-sm font-semibold mb-2">Source Data:</label>
+        <input type="text" id="dataInput" [(ngModel)]="inputData" 
+          class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none" 
+          placeholder="4,8,15,16">
+      </div>
+      <div class="text-center">
+        <button (click)="updateChart()" 
+          class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition">
+          Update Data
+        </button>
+      </div>
+      <div #chartContainer class="mt-6 flex justify-center"></div>
+    </div>
+  </div>
+  
+
+  
+  

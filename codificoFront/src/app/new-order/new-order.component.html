@@ -1,0 +1,138 @@
+<div class="flex items-center justify-center mt-6">
+    <div class="bg-white w-full max-w-2xl rounded-lg shadow-lg">
+        <div class="bg-green-600 text-white text-lg font-semibold p-4 rounded-t-lg">
+            Customer {{ customer.customerName }} - New Order
+        </div>
+        <div class="p-6">
+            <form [formGroup]="orderForm" (ngSubmit)="saveOrder()">
+                <div class="mb-6">
+                    <h2 class="text-xl font-bold mb-4">Order</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                        <div>
+                            <label class="block text-gray-700">Employee*</label>
+                            <select class="w-full border-b-2 border-gray-300" formControlName="empId">
+                                <option *ngFor="let emp of employees" [value]="emp.empid">{{ emp.fullName }}</option>
+                            </select>
+                            <div *ngIf="orderForm.get('empId')?.touched && orderForm.get('empId')?.invalid" class="text-red-500">
+                                Employee is required.
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700">Shipper*</label>
+                            <select class="w-full border-b-2 border-gray-300" formControlName="shipperId">
+                                <option *ngFor="let ship of shippers" [value]="ship.shipperId">{{ ship.companyName }}</option>
+                            </select>
+                            <div *ngIf="orderForm.get('shipperId')?.touched && orderForm.get('shipperId')?.invalid" class="text-red-500">
+                                Shipper is required.
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="mb-4">
+                        <label class="block text-gray-700">Ship Name*</label>
+                        <input type="text" class="w-full border-b-2 border-gray-300" formControlName="shipName">
+                        <div *ngIf="orderForm.get('shipName')?.touched && orderForm.get('shipName')?.invalid" class="text-red-500">
+                            Ship Name is required.
+                        </div>
+                    </div>
+            
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                        <div>
+                            <label class="block text-gray-700">Ship Address*</label>
+                            <input type="text" class="w-full border-b-2 border-gray-300" formControlName="shipAddress">
+                            <div *ngIf="orderForm.get('shipAddress')?.touched && orderForm.get('shipAddress')?.invalid" class="text-red-500">
+                                Ship Address is required.
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700">Ship City*</label>
+                            <input type="text" class="w-full border-b-2 border-gray-300" formControlName="shipCity">
+                            <div *ngIf="orderForm.get('shipCity')?.touched && orderForm.get('shipCity')?.invalid" class="text-red-500">
+                                Ship City is required.
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700">Ship Country*</label>
+                            <input type="text" class="w-full border-b-2 border-gray-300" formControlName="shipCountry">
+                            <div *ngIf="orderForm.get('shipCountry')?.touched && orderForm.get('shipCountry')?.invalid" class="text-red-500">
+                                Ship Country is required.
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                        <div>
+                            <label class="block text-gray-700"><i class="far fa-calendar-alt"></i> Order Date*</label>
+                            <input type="date" class="w-full border-b-2 border-gray-300" formControlName="orderDate">
+                            <div *ngIf="orderForm.get('orderDate')?.touched && orderForm.get('orderDate')?.invalid" class="text-red-500">
+                                Order Date is required.
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700"><i class="far fa-calendar-alt"></i> Required Date*</label>
+                            <input type="date" class="w-full border-b-2 border-gray-300" formControlName="requiredDate">
+                            <div *ngIf="orderForm.get('requiredDate')?.touched && orderForm.get('requiredDate')?.invalid" class="text-red-500">
+                                Required Date is required.
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700"><i class="far fa-calendar-alt"></i> Shipped Date</label>
+                            <input type="date" class="w-full border-b-2 border-gray-300" formControlName="shippedDate">
+                        </div>
+                    </div>
+            
+                    <div class="mb-4">
+                        <label class="block text-gray-700"><i class="fas fa-dollar-sign"></i> Freight*</label>
+                        <input type="number" class="w-full border-b-2 border-gray-300" formControlName="freight">
+                        <div *ngIf="orderForm.get('freight')?.touched && orderForm.get('freight')?.invalid" class="text-red-500">
+                            Freight is required and must be a positive number.
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="mb-6">
+                    <h2 class="text-xl font-bold mb-4">Order Details</h2>
+                    
+                    <div formGroupName="orderDetail">
+                        <label class="block text-gray-700">Product*</label>
+                        <select class="w-full border-b-2 border-gray-300" formControlName="productId">
+                            <option *ngFor="let prod of products" [value]="prod.productId">{{ prod.productName }}</option>
+                        </select>
+                        <div *ngIf="orderForm.get('orderDetail')?.get('productId')?.touched && orderForm.get('orderDetail')?.get('productId')?.invalid" class="text-red-500">
+                            Product is required.
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                            <div>
+                                <label class="block text-gray-700"><i class="fas fa-dollar-sign"></i> Unit Price*</label>
+                                <input type="number" class="w-full border-b-2 border-gray-300" formControlName="unitPrice">
+                                <div *ngIf="orderForm.get('orderDetail.unitPrice')?.touched && orderForm.get('orderDetail.unitPrice')?.invalid" class="text-red-500">
+                                    Unit Price is required and must be positive.
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-gray-700">Quantity*</label>
+                                <input type="number" class="w-full border-b-2 border-gray-300" formControlName="quantity">
+                                <div *ngIf="orderForm.get('orderDetail.quantity')?.touched && orderForm.get('orderDetail.quantity')?.invalid" class="text-red-500">
+                                    Quantity is required and must be at least 1.
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-gray-700">Discount*</label>
+                                <input type="number" class="w-full border-b-2 border-gray-300" formControlName="discount">
+                                <div *ngIf="orderForm.get('orderDetail.discount')?.touched && orderForm.get('orderDetail.discount')?.invalid" class="text-red-500">
+                                    Discount must have value.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="flex justify-end space-x-4">
+                    <button type="button" class="text-green-600" (click)="close()">CLOSE</button>
+                    <button type="submit" class="text-green-600" (click)="saveOrder()">SAVE</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
